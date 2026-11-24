@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario de pelis </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="snow" aria-hidden="true"></div>
+
+
+<div id="welcomeScreen" class="welcome-screen">
+
+  <!-- PRIMERA PANTALLA: EL SOBRE -->
+  <div id="envelopeStage" class="envelope-stage">
+    <p class="envelope-subtitle">UNA NAVIDAD PARA RECORDAR</p>
+
+    <h1 class="envelope-heading">Tienes una carta especial...</h1>
+
+    <button id="openEnvelope" class="envelope-button" aria-label="Abrir la carta">
+      <span class="envelope-icon">💌</span>
+      <span class="envelope-instruction">Presiona para abrir</span>
+    </button>
+
+    <p class="envelope-footer">Con cariño, Mary ❤️</p>
+  </div>
+
+  <!-- SEGUNDA PANTALLA: LA CARTA -->
+  <div id="welcomeLetter" class="welcome-card">
+
+    <div class="welcome-decoration">🎄 ✨ ❄️</div>
+
+    <p class="welcome-subtitle">UNA NAVIDAD PARA RECORDAR</p>
+
+    <h1>¡Bienvenido a nuestra pequeña aventura navideña!</h1>
+
+    <div class="welcome-letter">
+      <p>Se me ocurrió crear algo diferente para nosotros, una manera de compartir este mes y guardar pequeños recuerdos, incluso estando en lugares diferentes.</p>
+
+      <p>Durante los próximos 31 días tendremos una pequeña sorpresa esperándonos: películas, cartas, actividades, conversaciones y muchas cositas que preparé con mucho cariño.</p>
+
+      <p>Cada ventanita tendrá algo especial y quiero que disfrutemos de cada día sin adelantarnos a las sorpresas. También tendremos nuestras propias puntuaciones, porque obviamente necesitamos saber cuál de los dos tiene mejor gusto cinematográfico JAJAJA.</p>
+
+      <p>Quizás parezca algo sencillo, pero para mí significa mucho poder crear nuestras propias tradiciones y encontrar maneras de compartir momentos contigo.</p>
+
+      <p>Así que prepara las palomitas, busca tu mantita favorita y ponte cómodo, porque tenemos muchas películas por descubrir.</p>
+
+      <p class="welcome-highlight">Nuestra aventura comienza hoy.</p>
+      <p>¿Estás listo?</p>
+    </div>
+
+    <p class="welcome-signature">Con cariño, Mary. ❤️</p>
+
+    <button id="startAdventure" class="start-button">
+      Comenzar nuestra aventura ✨
+    </button>
+
+  </div>
+</div>
+
+
+  <header class="page-header">
+    <p>UNA NAVIDAD PARA RECORDAR</p>
+    <h1>Calendario de pelis</h1>
+    <p class="subtitle">31 días, 31 películas y muchos recuerdos ❤️</p>
+    <button id="musicButton" class="music-button">♫ Escuchar Christmas Tree Farm</button>
+    <div class="youtube-player">
+  <iframe
+    id="youtubePlayer"
+    width="320"
+    height="180"
+    src="https://www.youtube.com/embed/mN3rDTAdM2o"
+    title="Christmas Tree Farm - Taylor Swift"
+    allow="autoplay; encrypted-media; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+  </header>
+
+  <main>
+    <section class="house-area">
+      <div class="house">
+       <div class="roof">
+  <span>❄</span>
+  <span>❄</span>
+
+  <div class="roof-lights" aria-hidden="true">
+    <span>●</span>
+    <span>●</span>
+    <span>●</span>
+    <span>●</span>
+    <span>●</span>
+    <span>●</span>
+    <span>●</span>
+    <span>●</span>
+    <span>●</span>
+    <span>●</span>
+  </div>
+</div>
+
+        <div class="house-body">
+          <div id="windows" class="windows"></div>
+
+          <div class="door-area">
+            <div class="door-decoration">🎀</div>
+            <button id="finalDoor" class="final-door" aria-label="Puerta final">
+              <span>27</span>
+              <small>ÚLTIMA SORPRESA</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="snow-ground"></div>
+      </div>
+    </section>
+
+    <p class="instructions">
+      Cada día se abrirá una nueva ventanita.
+      ¡No te adelantes a las sorpresas! ✨
+    </p>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close-button" aria-label="Cerrar">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <footer>
+    Hecho con mucho cariño por Mary ❤️
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
+
