@@ -354,7 +354,7 @@ const movieHTML = movie ? `
     <h3>🍿 Nuestra película del día</h3>
 
     <img
-      src="posters/${movie.poster}"
+      src="${movie.poster}"
       alt="Póster de ${movie.title}"
       style="
         display: block;
